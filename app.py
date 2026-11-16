@@ -8,6 +8,7 @@ import os
 
 st.set_page_config(page_title=config.APP_NAME, page_icon="🌿", layout="wide", initial_sidebar_state="expanded")
 init_db(); seed_resources()
+from seed import seed as seed_demo_accounts; seed_demo_accounts()
 try:
     for _k in ("GROQ_API_KEY", "ANTHROPIC_API_KEY", "SUKOON_GROQ_MODEL", "SUKOON_MODEL"):
         if _k in st.secrets:
