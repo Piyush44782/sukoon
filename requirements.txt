@@ -1,0 +1,5 @@
+streamlit>=1.38
+anthropic>=0.40
+cryptography>=42.0
+numpy>=1.26
+pytest>=8.0
